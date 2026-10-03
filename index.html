@@ -50,32 +50,44 @@
   </div>
 </section>
 
-<section class="feature-section">
-  <div class="container feature-grid">
-    <article class="feature-card about-feature" id="about">
+<section id="about" class="section about-section">
+  <div class="container">
+    <div class="about-feature feature-card">
       <div class="feature-photo"><img id="aboutPortrait" alt="کربلایی طاها زراعتکار"></div>
       <div class="feature-content">
-        <div class="feature-title"><span>✦</span> درباره کربلایی طاها زراعتکار</div>
+        <div class="feature-title"><span>✦</span> درباره من</div>
         <h2 id="aboutTitle">کربلایی طاها زراعتکار</h2>
         <p id="aboutText">پخش آثار و فیلم‌های مداحی از کربلایی طاها زراعتکار</p>
-        <a class="red-btn" href="#about">بیشتر بخوانید <b>‹</b></a>
+        <a class="red-btn" href="#social">ارتباط با من <b>‹</b></a>
       </div>
-    </article>
-    <article class="feature-card audio-feature">
-      <div class="feature-title"><span>♫</span> صوت‌ها</div>
-      <div class="coming-calligraphy">به‌زودی</div>
-      <div class="wave"></div>
-      <a class="red-btn" href="#audio">مشاهده کنید <b>‹</b></a>
-    </article>
+    </div>
   </div>
 </section>
 
 <section id="events" class="section events-section">
   <div class="container">
     <div class="section-head">
-      <div><h2><span class="section-symbol">▦</span> آرشیو مراسمات</h2><p>مشاهده مجموعه پوسترهای مراسمات برگزار شده</p></div>
-      <a class="red-btn" href="#archive">مشاهده همه <b>‹</b></a>
+      <div><h2><span class="section-symbol">▦</span> اعلام مراسم‌ها</h2><p>آخرین برنامه‌ها و مراسم‌های اعلام‌شده</p></div>
     </div>
+    <div id="eventGrid" class="event-grid"></div>
+  </div>
+</section>
+
+<section id="audio" class="section audio-section">
+  <div class="container">
+    <div class="section-head"><div><h2><span class="section-symbol">♫</span> صوت‌ها</h2><p>آرشیو صوت‌های کربلایی طاها زراعتکار</p></div></div>
+    <div id="audioGrid" class="audio-grid"></div>
+  </div>
+</section>
+<section id="videos" class="section video-section">
+  <div class="container">
+    <div class="section-head"><div><h2><span class="section-symbol">▶</span> فیلم‌ها</h2><p>آرشیو فیلم‌های مداحی و مراسم</p></div></div>
+    <div id="videoGrid" class="video-grid"></div>
+  </div>
+</section>
+<section id="archive" class="section archive-section">
+  <div class="container">
+    <div class="section-head"><div><h2><span class="section-symbol">▦</span> آرشیو پوسترها</h2><p>مجموعه پوسترهای مراسمات برگزار شده</p></div></div>
     <div class="archive-strip">
       <button id="archivePrev" class="archive-arrow" aria-label="قبلی">‹</button>
       <div id="posterGrid" class="poster-grid"></div>
@@ -83,18 +95,14 @@
     </div>
   </div>
 </section>
-
-<section id="audio" class="section audio-section"><div class="container"><div class="section-head"><div><h2>صوت‌ها</h2><p>آرشیو صوت‌های کربلایی طاها زراعتکار</p></div></div><div id="audioGrid" class="audio-grid"></div></div></section>
-<section id="videos" class="section video-section"><div class="container"><div class="section-head"><div><h2><span class="section-symbol">▶</span> فیلم‌ها</h2><p>مجموعه فیلم‌های مداحی و مراسم</p></div></div><div id="videoGrid" class="video-grid"><div class="video-empty"><div>▶</div><h3>فیلم‌ها</h3><p>فیلم‌های مداحی و مراسم در این بخش قرار می‌گیرند.</p></div></div></div></section>
-<section id="archive" class="section archive-section"><div class="container"><div class="section-head"><div><h2><span class="section-symbol">▦</span> آرشیو پوسترها</h2><p>مجموعه پوسترهای مراسمات برگزار شده</p></div></div><div class="archive-strip"><button id="archivePrev" class="archive-arrow" aria-label="قبلی">‹</button><div id="posterGrid" class="poster-grid"></div><button id="archiveNext" class="archive-arrow" aria-label="بعدی">›</button></div></div></section>
 <section id="social" class="social-section">
   <div class="container social-inner">
     <div class="social-title"><span>ارتباط با ما</span><small>صفحات رسمی و شبکه‌های اجتماعی</small></div>
     <div class="social-grid">
-      <a id="telegramLink" target="_blank" rel="noopener"><span class="circle-logo telegram">✈</span><div><b>تلگرام</b><small>@karbalayiMtahazeraatkar</small></div></a>
-      <a id="instagramLink" target="_blank" rel="noopener"><span class="circle-logo instagram">◎</span><div><b>اینستاگرام</b><small>@zeraatkar.live</small></div></a>
-      <a id="eitaaLink" target="_blank" rel="noopener"><span class="circle-logo eitaa">e</span><div><b>ایتا</b><small>JANAMHOSSEIN72</small></div></a>
-      <a id="baleLink" target="_blank" rel="noopener"><span class="circle-logo bale">●</span><div><b>بله</b><small>JANAMHOSSEIN72</small></div></a>
+      <a id="telegramLink" target="_blank" rel="noopener"><span class="circle-logo telegram"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M42.2 8.7 35.8 39c-.5 2.1-1.8 2.6-3.6 1.6l-9.9-7.3-4.8 4.6c-.5.5-.9.9-1.8.9l.7-10 18.2-16.5c.8-.7-.2-1.1-1.2-.4L10.9 25.6 1.2 22.6c-2.1-.7-2.1-2.1.4-3.1L39.4 4.8c1.8-.7 3.4.4 2.8 3.9Z"/></svg></span><div><b>تلگرام</b><small>@karbalayiMtahazeraatkar</small></div></a>
+      <a id="instagramLink" target="_blank" rel="noopener"><span class="circle-logo instagram"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="7" width="34" height="34" rx="9" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="34.5" cy="13.5" r="2.2" fill="currentColor"/></svg></span><div><b>اینستاگرام</b><small>@zeraatkar.live</small></div></a>
+      <a id="eitaaLink" target="_blank" rel="noopener"><span class="circle-logo eitaa"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M12.928 31.274c-2.198-1.34-3.801-3.232-3.82-6.206-.042-6.88 10.703-12.049 16.364-11.642 3.714.267 6.662 2.559 6.856 4.374.272 2.53-6.85 4.302-8.488 4.593-3.588.636-7.535-.764-5.895-4.823-3.971.365-5.88 6.262-2.64 8.635-4.684 4.459-.8 11.088 2.727 11.712.276-6.401 4.92-9.605 9.322-11.126 4.31-1.488 8.797-5.263 8.578-10.714-.215-5.379-1.167-10.234-8.596-11.577C17.096 2.648 3.291 16.262 4.18 30.462c.478 7.626 7.05 13.875 16.218 13.154 12.583-.99 16.421-14.782 23.463-19.945"/></svg></span><div><b>ایتا</b><small>JANAMHOSSEIN72</small></div></a>
+      <a id="baleLink" target="_blank" rel="noopener"><span class="circle-logo bale"><svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="baleG2" x1="8" y1="40" x2="40" y2="8" gradientUnits="userSpaceOnUse"><stop stop-color="#18266d"/><stop offset="1" stop-color="#20d9a2"/></linearGradient></defs><circle cx="24" cy="24" r="21" fill="url(#baleG2)"/><path d="M14 22.5 20.5 29 34 15.5" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><b>بله</b><small>JANAMHOSSEIN72</small></div></a>
     </div>
   </div>
 </section>
@@ -103,7 +111,7 @@
 <footer>
   <div class="footer-ornament">السلام علیک یا اباعبدالله الحسین</div>
   <div class="footer-social">
-    <a id="footerTelegram" target="_blank" rel="noopener">✈</a><a id="footerInstagram" target="_blank" rel="noopener">◎</a><a id="footerEitaa" target="_blank" rel="noopener">e</a><a id="footerBale" target="_blank" rel="noopener">●</a>
+    <a id="footerTelegram" class="footer-logo" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="currentColor" d="M42.2 8.7 35.8 39c-.5 2.1-1.8 2.6-3.6 1.6l-9.9-7.3-4.8 4.6c-.5.5-.9.9-1.8.9l.7-10 18.2-16.5c.8-.7-.2-1.1-1.2-.4L10.9 25.6 1.2 22.6c-2.1-.7-2.1-2.1.4-3.1L39.4 4.8c1.8-.7 3.4.4 2.8 3.9Z"/></svg></a><a id="footerInstagram" class="footer-logo" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="7" y="7" width="34" height="34" rx="9" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="24" cy="24" r="8" fill="none" stroke="currentColor" stroke-width="4"/><circle cx="34.5" cy="13.5" r="2.2" fill="currentColor"/></svg></a><a id="footerEitaa" class="footer-logo" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" d="M12.928 31.274c-2.198-1.34-3.801-3.232-3.82-6.206-.042-6.88 10.703-12.049 16.364-11.642 3.714.267 6.662 2.559 6.856 4.374.272 2.53-6.85 4.302-8.488 4.593-3.588.636-7.535-.764-5.895-4.823-3.971.365-5.88 6.262-2.64 8.635-4.684 4.459-.8 11.088 2.727 11.712.276-6.401 4.92-9.605 9.322-11.126 4.31-1.488 8.797-5.263 8.578-10.714-.215-5.379-1.167-10.234-8.596-11.577C17.096 2.648 3.291 16.262 4.18 30.462c.478 7.626 7.05 13.875 16.218 13.154 12.583-.99 16.421-14.782 23.463-19.945"/></svg></a><a id="footerBale" class="footer-logo" target="_blank" rel="noopener"><svg viewBox="0 0 48 48" aria-hidden="true"><defs><linearGradient id="baleG2" x1="8" y1="40" x2="40" y2="8" gradientUnits="userSpaceOnUse"><stop stop-color="#18266d"/><stop offset="1" stop-color="#20d9a2"/></linearGradient></defs><circle cx="24" cy="24" r="21" fill="url(#baleG2)"/><path d="M14 22.5 20.5 29 34 15.5" fill="none" stroke="#fff" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
   </div>
   <strong>کربلایی طاها زراعتکار</strong>
   <span>پخش آثار و فیلم‌های مداحی از کربلایی طاها زراعتکار</span>
@@ -111,6 +119,7 @@
 </footer>
 
 <div id="lightbox" class="lightbox" aria-hidden="true"><button id="close" aria-label="بستن">×</button><div class="lightbox-content"><img id="lightboxImg" alt="پوستر"><div id="lightboxMeta" class="rating-panel"></div></div></div>
+<div id="videoLightbox" class="video-lightbox" aria-hidden="true"><button id="videoClose" aria-label="بستن">×</button><div id="videoModalContent"></div></div>
 <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
 <script src="script.js"></script>
 </body></html>
