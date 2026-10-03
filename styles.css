@@ -183,3 +183,37 @@ footer .container>span:nth-of-type(1){font-size:15px;letter-spacing:1px}
   .social-grid{grid-template-columns:1fr}
   .ya-hossein-banner strong{font-size:82px}
 }
+
+/* exact-reference finishing layer */
+.topbar{background:rgba(5,5,5,.92);height:72px}
+.nav{height:72px;position:relative}
+.brand{position:absolute;right:0;margin:0;flex-direction:row-reverse;color:#b52632;font-size:11px;letter-spacing:1.5px}
+.brand-mark{font-size:24px;color:#b52632}
+.links{margin-right:145px;margin-left:auto;gap:22px}
+.links a{font-size:12px}
+.site-search{margin-left:0;width:225px;height:36px;border-radius:20px}
+.hero{min-height:760px}
+.hero-inner{min-height:760px;padding-top:72px}
+.hero-copy{padding-right:0;max-width:570px}
+.hero-copy:before{right:auto;left:-20px;top:70px;height:150px;background:linear-gradient(transparent,var(--red2),transparent)}
+.hero-name{font-size:clamp(55px,6vw,82px);text-shadow:0 5px 18px #000}
+.reference-redline{color:var(--red2)!important;font-size:13px!important;margin-top:2px!important}
+.hero-social{gap:16px;margin-top:22px;align-items:flex-start}
+.hero-social a{min-width:58px;width:58px;height:58px;padding:7px 3px;flex-direction:column;gap:4px;border-radius:50%;background:rgba(10,9,10,.68);font-size:9px;border-color:rgba(255,255,255,.12)}
+.hero-social .social-logo{width:19px;height:19px}
+.feature-section{padding-top:30px;background:#080808}
+.feature-grid{gap:14px}
+.feature-card{min-height:235px;border-radius:7px;padding:27px}
+.about-feature{direction:rtl}
+.about-feature h3{font-size:21px}
+.feature-big{font-size:64px;margin-top:20px}
+.section{padding:62px 0}
+.section-head{margin-bottom:21px}
+.section-head h2{font-size:25px}
+.archive-strip .poster{flex-basis:calc((100% - 75px)/6)}
+.social-grid{display:none}
+footer{position:relative;overflow:hidden;padding:42px 0 24px}
+footer:after{content:"السلام علیک یا اباعبدالله الحسین";position:absolute;right:5%;bottom:18px;color:#777;font:500 22px/1.6 'Noto Nastaliq Urdu',serif;opacity:.7}
+footer .container:before{font-size:58px}
+@media(max-width:900px){.brand{position:static}.links{margin:0}.hero-copy:before{display:none}}
+@media(max-width:600px){.hero{min-height:700px}.hero-inner{min-height:700px}.hero-name{font-size:50px}.hero-social a{width:52px;height:52px}.archive-strip .poster{flex-basis:calc((100% - 7px)/2)}footer:after{position:static;margin-top:10px}}
