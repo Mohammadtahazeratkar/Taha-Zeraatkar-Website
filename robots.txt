@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mohammadtahazeratkar.github.io/Taha-Zeraatkar-Website/sitemap.xml
